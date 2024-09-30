@@ -1,0 +1,41 @@
+version: 2
+
+models:
+  - name: int_funcionarios_preparacao
+    description: tabela intermediaria para indicar o gerente do funcionario.
+    columns:
+      - name: PK_FUNCIONARIO
+        description: Chave primária da tabela
+        data_tests:
+          - unique
+          - not_null
+          
+      - name: FK_GERENTE
+        description: Chave estrangeira que faz o link com o PK_FUNCIONARIO da própria tabela
+      
+      - name: NOME_GERENTE
+        description: Nome completo do gerente do funcionario
+      
+      - name: NOME_FUNCIONARIO
+        description: Nome completo do funcionario
+      
+      - name: CARGO_FUNCIONARIO
+        description: Cargo do funcionario
+      
+      - name: DT_NASCIMENTO_FUNCIONARIO
+        description: Data de nascimento do funcionario
+      
+      - name: DT_CONTRATACAO
+        description: Data de contratação do funcionario
+      
+      - name: CIDADE_FUNCIONARIO
+        description: Cidade indicada no cadastro do funcionario
+      
+      - name: REGIAO_FUNCIONARIO
+        description: Região indicada no cadastro do funcionario
+      
+      - name: PAIS_FUNCIONARIO
+        description: Pais indicado no cadastro do funcionário
+      
+      - name: NOME_GERENTE
+        description: Nome do superior do funcionário

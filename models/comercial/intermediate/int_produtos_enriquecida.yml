@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: int_produtos_enriquecida
+    description: tabela intermediaria para consolidas as informações de categorias e fornecedores de produtos.
+    columns:
+      - name: PK_PRODUTO
+        description: Chave primária da tabela
+        data_tests:
+          - unique
+          - not_null
