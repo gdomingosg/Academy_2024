@@ -12,7 +12,7 @@ with
             , cast(CATEGORYID as int) as fk_categoria
             , cast(PRODUCTNAME as varchar) as nome_produto
             , cast(QUANTITYPERUNIT as varchar) as quantidade_por_unidade
-            , cast(UNITPRICE as float) as preco_unitario
+            , cast(UNITPRICE as numeric(18,2)) as preco_unitario
             , cast(UNITSINSTOCK as int) as unidades_em_estoque
             , cast(UNITSONORDER as int) as unidades_em_pedidos
             , cast(REORDERLEVEL as int) as nivel_reabastacimento
