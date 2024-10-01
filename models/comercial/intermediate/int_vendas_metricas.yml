@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: int_vendas_metricas
+    description: tabela intermediaria para consolidas de pedidos.
+    columns:
+      - name: pk_pedido_item
+        description: Chave primária da tabela
+        data_tests:
+          - unique
+          - not_null

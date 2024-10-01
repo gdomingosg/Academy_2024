@@ -34,5 +34,14 @@ sources:
             data_tests:
               - unique
               - not_null
+      - name: _order_
+        description: Tabela fonte com informações dos produtos presentes em cada pedido
+        columns:
+          - name: id
+            data_tests:
+              - unique
+              - not_null
+      - name: orderdetail
+        description: Tabela fonte com informações dos pedidos e fretes
               
               
