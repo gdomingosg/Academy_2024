@@ -43,5 +43,21 @@ sources:
               - not_null
       - name: orderdetail
         description: Tabela fonte com informações dos pedidos e fretes
+
+      - name: customer
+        description: Tabela fonte com informações dos clientes.
+        columns:
+          - name: id
+            data_tests:
+              - unique
+              - not_null
+      
+      - name: shipper
+        description: Tabela com informações das transportadoras.
+        columns:
+          - name: id
+            data_tests:
+              - unique
+              - not_null
               
               

@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: int_clientes_preparacao
+    description: tabela intermediaria para transportadora
+    columns:
+      - name: PK_TRANSPORTADORA
+        description: Chave primária da tabela
+      
+      - name: nome_transportadora
+        description: Campo com o nome da transportadora

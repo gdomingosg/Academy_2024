@@ -14,5 +14,15 @@ with
         from {{ ref('dim_funcionarios') }}
     )
 
+    , dim_transportadora as (
+        select *
+        from {{ ref('dim_transportadora') }}
+    )
+
+    , dim_clientes as (
+        select *
+        deom {{ ref('dim_clientes') }}
+    )
+
 select *
 from int_vendas
